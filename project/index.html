@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>project 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+    <div class="container">
+        <h2>Speech to text converter</h2>
+        <div id="result"></div>
+        <div>
+            <label for="language">Select Language:</label>
+            <select id="language" onchange="updateLanguage()">
+                <option value="en-US">English</option>
+                <option value="hi-IN">Hindi</option>
+            </select>
+        </div>
+        <div class="button-container">
+
+            <button onclick="startConverting()">
+                <i class="fa fa-microphone"></i>
+            </button>
+
+             <button onclick="stopConverting()">
+                <i class="fa fa-stop"></i>
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
